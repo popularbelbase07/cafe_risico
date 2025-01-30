@@ -73,7 +73,7 @@ nav ul.menu li a {
     top: 0;
     left: 0;
     opacity: 0;
-    animation: slideShow 15s infinite; /* Adjust timing as needed */
+    animation: slideShow 9s infinite; /* Adjust timing as needed */
 }
 
 .slide:nth-child(1) {
@@ -81,7 +81,7 @@ nav ul.menu li a {
 }
 
 .slide:nth-child(2) {
-    animation-delay: 10s;
+    animation-delay: 3s;
 }
 
 .slide:nth-child(3) {
@@ -108,7 +108,71 @@ nav ul.menu li a {
 
 
 
+/* container 1...................... */
+.welcome-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
 
+.welcome-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.welcome-text {
+    flex: 1;
+}
+
+.welcome-text h2 {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 25px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.welcome-text strong {
+    color: #d4af37; /* Gold color for emphasis */
+}
+
+.welcome-image {
+    flex: 1;
+    text-align: right;
+}
+
+.welcome-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .welcome-image {
+        text-align: center;
+    }
+
+    .welcome-text h2 {
+        font-size: 28px;
+    }
+
+    .welcome-text p {
+        font-size: 16px;
+    }
+}
 
 
 
