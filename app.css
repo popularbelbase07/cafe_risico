@@ -218,7 +218,7 @@ body {
 }
 
 .food-description {
-    flex: 1 1 50%;
+    flex: 1 1 25%;
     padding-left: 20px;
     font-size: 24px;
     line-height: 1.6;
@@ -241,7 +241,75 @@ body {
     }
 }
 
+/*Container 3 */
 
+/* CSS */
+.cocktail-section {
+    background-color: #1a1a1a;
+    padding: 4rem 2rem;
+  }
+  
+  .content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .text-content {
+    flex: 1;
+    max-width: 600px;
+    padding-right: 2rem;
+  }
+  
+  .text-content h2 {
+    color: #c5a47e;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .text-content p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+  }
+  
+  .video-container {
+    flex: 1;
+    max-width: 500px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  
+  video, .video-container iframe {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+    }
+    
+    .text-content {
+      padding-right: 0;
+      text-align: center;
+    }
+    
+    .video-container {
+      width: 100%;
+      margin-top: 2rem;
+    }
+  }
 
 
 /* Footer section */
@@ -361,5 +429,56 @@ footer {
 
     nav ul.menu li a {
         font-size: 16px;
+    }
+}
+
+/* Developers details section*/
+.credits {
+    background-color: #2a2a2a;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.credits p {
+    color: #ffffff;
+    font-size: 0.9em;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.credits a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.credits a:hover {
+    color: #6baef2;
+    text-decoration: underline;
+}
+
+/* Optional: Add LinkedIn icon */
+.credits a::before {
+    content: "";
+    display: inline-block;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/174/174857.png');
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .credits {
+        padding: 12px 15px;
+    }
+    
+    .credits p {
+        font-size: 0.8em;
     }
 }
