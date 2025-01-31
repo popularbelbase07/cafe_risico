@@ -246,7 +246,8 @@ body {
 /* CSS */
 .cocktail-section {
     background-color: #1a1a1a;
-    padding: 4rem 2rem;
+    padding: 6rem 2rem;
+    margin: 200px 1;
   }
   
   .content-container {

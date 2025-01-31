@@ -1,0 +1,129 @@
+/* Contact Page Specific Styles */
+.contact-header {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('contact-bg.jpg') center/cover;
+    border-bottom: 1px solid #c5a47e;
+}
+
+.contact-header h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.contact-container {
+    max-width: 1600px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    background-color: azure;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-card {
+    background: rgba(255,255,255,0.03);
+    padding: 2rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(200,200,200,0.1);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-card h2 {
+    color: #a4c57e;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+h2{
+    color: #a9d13a;
+}
+
+.contact-card p {
+    color: #3f1616;
+    line-height: 1.8;
+}
+
+.contact-card a {
+    color: #c5a47e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: #3d3434;
+    text-decoration: underline;
+}
+
+.restaurant-map {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    border: none;
+}
+
+.social-media {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #1a1a1a;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 1px solid #c5a47e;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #c5a47e;
+    color: #1a1a1a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .restaurant-map {
+        height: 300px;
+    }
+    
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-card {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,195 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.menu-header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('header-bg.jpg') center/cover;
+    border-bottom: 1px solid #c5a47e;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #c5a47e;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #b08f69;
+}
+
+
+
+/* Menu Sections */
+.menu-section {
+    padding: 4rem 0;
+    background-color: #945d3c;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #2a2a2a;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* Menu Items */
+.menu-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.menu-item {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.item-text {
+    flex: 1;
+}
+
+.menu-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #2a2a2a;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    color: #c5a47e;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Beverages Section */
+.beverage-item {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+   
+    
+}
+
+.beer-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.beer-name {
+    font-weight: 700;
+}
+
+.beer-prices {
+    color: #c5a47e;
+}
+
+.cocktail {
+    margin: 1.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .beer-list li {
+        flex-direction: column;
+    }
+
+    .beer-prices {
+        margin-top: 0.5rem;
+    }
+}
+
+/* PDF Section */
+.pdf-menu {
+    background-color: #2a2a2a;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.pdf-menu h2 {
+    color: #a02323;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.5rem;
+}
+
+.pdf-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #45b411;
+    color: #3f178a;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.pdf-btn:hover {
+    background-color: #b08f69;
+}
+
+/* Footer */
+.menu-footer {
+    text-align: center;
+    padding: 2rem;
+    background: #000;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
