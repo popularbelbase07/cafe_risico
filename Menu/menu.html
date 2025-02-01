@@ -18,7 +18,7 @@
             <ul class="menu">
                 <li><a href="../app.html">Home</a></li>
                 <li><a href="./menu.html">Menu</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="../About/about.html">About Us</a></li>
                 <li><a href="../Contact/contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -26,24 +26,39 @@
 
     <!-- Menu Header -->
     <header class="menu-header">
-        <h1>Cafe Risiko Søborg</h1>
-        <p class="subtitle">Fine Dining Experience</p>
+        <h1>Fine Dining Experience</h1>
+        <p class="subtitle">We are ready to serve you</p>
     </header>
+
+    <!--Menu view and download -->
+
+    <div class="container">
+        <div class="button-container">
+            <!-- Replace 'menu.pdf' with your actual PDF file name -->
+            <a href="menu.pdf" target="_blank" class="btn view-btn">
+                View Menu
+            </a>
+            
+            <a href="menu.pdf" download class="btn download-btn">
+                Download Menu
+            </a>
+        </div>
+    </div>
 
     
     <!-- Appetizers -->
     <section class="menu-section" id="appetizers">
         <div class="container">
             <h2 class="section-title">Appetizers</h2>
+            <p class="price"> PRICE : DKK 105</p>
             <div class="menu-grid">
                 <!-- Appetizer Items -->
                 <div class="menu-item">
                     <div class="item-text">
-                        <h3>Foie Gras Terrine</h3>
-                        <p class="price">$42</p>
-                        <p class="description">Silky duck liver terrine with Sauternes gelée, toasted brioche, and seasonal chutney</p>
+                        <h3>GAMBERETTI</h3>                      
+                        <p class="description">Small prawns in tomato-garlic sauce</p>
                     </div>
-                    <img src="images/foie-gras.jpg" alt="Foie Gras Terrine">
+                    <img src="../images/GAMBARETTI.jpg" alt="GAMBERETTI">
                 </div>
                 
                 <!-- More appetizer items -->
@@ -55,15 +70,16 @@
     <section class="menu-section" id="mains">
         <div class="container">
             <h2 class="section-title">Main Courses</h2>
+            <p class="price"> PRICE : DKK 189</p>
             <div class="menu-grid">
                 <!-- Main Course Items -->
                 <div class="menu-item">
                     <div class="item-text">
-                        <h3>Wagyu Beef Tournedos</h3>
-                        <p class="price">$98</p>
-                        <p class="description">A5 Japanese Wagyu with truffled pomme purée, glazed heirloom carrots, and red wine jus</p>
+                        <h3>FILETTO PROFESSORI</h3>
+                       
+                        <p class="description">Oksemørbrad, svampesauce, kartofler og garniture</p>
                     </div>
-                    <img src="images/wagyu.jpg" alt="Wagyu Beef">
+                    <img src="../images\rbdc-Cafe-Risico-meat.jpg" alt="Wagyu Beef">
                 </div>
                 
                 <!-- More main course items -->
@@ -75,15 +91,16 @@
     <section class="menu-section" id="desserts">
         <div class="container">
             <h2 class="section-title">Desserts</h2>
+            <p class="price">PRICE : DKK 85</p>
             <div class="menu-grid">
                 <!-- Dessert Items -->
                 <div class="menu-item">
                     <div class="item-text">
-                        <h3>Chocolate Soufflé</h3>
-                        <p class="price">$24</p>
-                        <p class="description">Grand Marnier-infused soufflé with vanilla bean ice cream</p>
+                        <h3>TIRAMISU</h3>
+                      
+                        <p class="description">Cream, suger ,egg white , coffee with venilla essience and Ameratto syrup and Lady finger. a</p>
                     </div>
-                    <img src="../images/pexels-fridell-3417441.jpg" alt="Chocolate Soufflé">
+                    <img src="../images/TIRAMISU.jpg" alt="Chocolate Soufflé">
                 </div>
                 
                 <!-- More dessert items -->
@@ -124,9 +141,9 @@
                 <!-- Cocktails -->
                 <div class="beverage-item">
                     <h3>Signature Cocktails</h3>
+                    <p class="price1">PRICE : DKK 75</p> 
                     <div class="cocktail">
                         <h4>Smoked Old Fashioned</h4>
-                        <p class="price">$22</p>
                         <p class="description">Woodford Reserve, demerara syrup, orange bitters, smoked with hickory</p>
                     </div>
                     <div class="menu-grid">
@@ -137,14 +154,6 @@
                     <!-- More cocktail items -->
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- PDF Menu Section -->
-    <section class="pdf-menu">
-        <div class="container">
-            <h2>Download Our Menu</h2>
-            <a href="menu.pdf" class="pdf-btn" download>Download Menu (PDF)</a>
         </div>
     </section>
 

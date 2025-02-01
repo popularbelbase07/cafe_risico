@@ -1,0 +1,136 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.7;
+    background-color: #FFF9F0;
+    color: #4A4A4A;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    border-bottom: 3px solid #D4A96A;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    color: #852c09;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+    margin : 20px;
+}
+
+.header h2 {
+    font-size: 2rem;
+    color: #6B4423;
+    font-weight: 400;
+}
+
+/* Content Styles */
+.content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+}
+
+.highlight {
+    font-size: 1.3rem;
+    color: #6B4423;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #FFF4E6;
+    border-left: 4px solid #D4A96A;
+}
+
+.values {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: #F8F4EF;
+    border-radius: 10px;
+}
+
+.values h3 {
+    color: #2C1810;
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.values li {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    list-style-type: none;
+}
+
+.commitment {
+    font-style: italic;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #FFF4E6;
+    border-radius: 10px;
+}
+
+/* CTA Styles */
+.cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.menu-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #6B4423;
+    color: white!important;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.menu-button:hover {
+    background-color: #D4A96A;
+    transform: translateY(-2px);
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    color: #6B4423;
+    border-top: 2px solid #D4A96A;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content {
+        padding: 1.5rem;
+    }
+    
+    .highlight {
+        font-size: 1.1rem;
+    }
+}
