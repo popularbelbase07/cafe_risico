@@ -42,8 +42,8 @@ h1 {
 
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1400px;
+    margin: 2rem auto;
     padding: 2rem;
     background-color: #b08f69;
 }
@@ -171,8 +171,9 @@ h3 {
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    width: 200PX;
-    margin: -30PX -20PX -10PX -200PX;
+    width: 400PX;
+    margin: -80PX 20PX 10PX 300PX;
+    text-align: center ;
 }
 
 .description {
@@ -193,22 +194,42 @@ h3 {
 }
 
 .beer-list li {
+    
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 3rem 0;
     border-bottom: 1px solid #eee;
 }
 
 .beer-name {
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .beer-prices {
-    color: #c5a47e;
+    color: #080808;
+    font-weight: 700;   
+    padding: 2rem;
 }
 
+.Cocktails_item{
+    margin: 20px 20px 20px 20px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+}
 .cocktail {
     margin: 1.5rem 0;
+}
+
+.wine_item{
+    margin: 20px 20px 20px 20px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
 }
 
 /* Responsive Design */

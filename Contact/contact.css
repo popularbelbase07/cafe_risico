@@ -104,6 +104,14 @@ h2{
     color: #1a1a1a;
 }
 
+/* Footer */
+.contact-footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 1rem;
+    color: #fca863;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact-container {

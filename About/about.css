@@ -7,23 +7,18 @@
 
 body {
     font-family: 'Georgia', serif;
-    line-height: 1.7;
     background-color: #FFF9F0;
     color: #4A4A4A;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-}
 
 /* Header Styles */
 .header {
     text-align: center;
-    margin-bottom: 3rem;
-    padding: 2rem 0;
     border-bottom: 3px solid #D4A96A;
+    width: 30%;
+    background-color: #FFF4E6;
+    border-radius: 15px;
 }
 
 .header h1 {
@@ -108,9 +103,7 @@ body {
 }
 
 .about-footer{
-    text-align: center;
-    margin-top: 4rem;
-    padding: rem;
+    text-align: center;   
     color: #6B4423;
     border-top: 2px solid #D4A96A;
     color: #fca863;
@@ -118,8 +111,8 @@ body {
 /* Footer Styles */
 .footer {
     text-align: center;
-    margin-top: 4rem;
-    padding: 2rem;
+
+ 
     border-top: 2px solid #D4A96A;
     color: #fca863;    
     background-color: rgb(66, 78, 27);
