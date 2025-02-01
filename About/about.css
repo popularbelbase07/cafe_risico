@@ -49,7 +49,7 @@ body {
 }
 
 .highlight {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     color: #6B4423;
     margin: 2rem 0;
     padding: 1.5rem;
@@ -107,13 +107,22 @@ body {
     transform: translateY(-2px);
 }
 
+.about-footer{
+    text-align: center;
+    margin-top: 4rem;
+    padding: rem;
+    color: #6B4423;
+    border-top: 2px solid #D4A96A;
+    color: #fca863;
+}
 /* Footer Styles */
 .footer {
     text-align: center;
     margin-top: 4rem;
     padding: 2rem;
-    color: #6B4423;
     border-top: 2px solid #D4A96A;
+    color: #fca863;    
+    background-color: rgb(66, 78, 27);
 }
 
 /* Responsive Design */
