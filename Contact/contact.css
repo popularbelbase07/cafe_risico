@@ -1,140 +1,209 @@
-/* Contact Page Specific Styles */
+/* Enhanced Responsive Styles */
+:root {
+    --primary-gold: #c5a47e;
+    --dark-bg: #1a1a1a;
+    --light-bg: #f5f5f5;
+    --text-dark: #3d3434;
+    --section-padding: clamp(3rem, 8vw, 6rem) 0;
+    --container-width: min(1400px, 90%);
+    --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: var(--light-bg);
+    overflow-x: hidden;
+}
+
+/* Improved Contact Header */
 .contact-header {
-    text-align: center;
-    padding: 6rem 2rem;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                url('contact-bg.jpg') center/cover;
-    border-bottom: 1px solid #c5a47e;
+    padding: var(--section-padding);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.7) 100%),
+                url('./images/contact-bg.jpg') fixed center/cover;
+    display: grid;
+    place-items: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+ 
 }
 
 .contact-header h1 {
-    font-size: 3.5rem;
-    color: #ffffff;
-    margin-bottom: 1rem;
-}
-.subtitle{
-    font-size: 25px;
+    font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
+    color: #fff;
+    margin-block: 0, .5em;
+    max-width: 15ch;
+    line-height: 1.1;
+    margin: 20px;
 }
 
+.subtitle {
+    font-size: clamp(1rem, 1.25vw + 0.75rem, 1.5rem);
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 60ch;
+    margin-inline: auto;
+    margin: 20px -150px 40px 30px;
+}
+
+/* Modern Contact Container */
 .contact-container {
-    max-width: 1600px;
-    margin: 4rem auto;
-    padding: 0 2rem;
+    width: var(--container-width);
+    margin: var(--section-padding);
+    padding: clamp(1.5rem, 3vw, 3rem);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    background-color: azure;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 1.25rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 .contact-card {
-    background: rgba(255,255,255,0.03);
-    padding: 2rem;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    border: 1px solid rgba(200,200,200,0.1);
+    padding: clamp(1.5rem, 3vw, 2rem);
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    will-change: transform;
 }
 
 .contact-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.5rem) scale(1.02);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.08);
 }
 
 .contact-card h2 {
-    color: #a4c57e;
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-h2{
-    color: #a9d13a;
+    font-size: clamp(1.375rem, 1.5vw + 1rem, 1.75rem);
+    color: var(--primary-gold);
+    margin-block: 0 0.75em;
 }
 
 .contact-card p {
-    color: #3f1616;
-    line-height: 1.8;
+    font-size: clamp(0.9375rem, 0.5vw + 0.875rem, 1.125rem);
+    line-height: 1.7;
+    color: var(--text-dark);
 }
 
-.contact-card a {
-    color: #c5a47e;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-card a:hover {
-    color: #3d3434;
-    text-decoration: underline;
-}
-
-.restaurant-map {
-    width: 100%;
-    height: 500px;
-    border-radius: 8px;
-    border: none;
-}
-
+/* Enhanced Social Media Section */
 .social-media {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: #1a1a1a;
+    padding: var(--section-padding);
+    background: var(--dark-bg);
+    position: relative;
+    overflow: hidden;
+   
+}
+.social-media h2{
+    margin: 20px;
 }
 
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    width: var(--container-width);
+    margin-inline: auto;
 }
 
 .social-icons a {
-    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1em 1.5em;
+    border: 2px solid var(--primary-gold);
+    border-radius: 100vw;
+    color: #fff;
     text-decoration: none;
-    padding: 1rem 2rem;
-    border: 1px solid #c5a47e;
-    border-radius: 50px;
-    transition: all 0.3s ease;
+    transition: var(--transition);
+    background: transparent;
+    font-size: clamp(0.9375rem, 1vw + 0.75rem, 1.125rem);
 }
 
 .social-icons a:hover {
-    background: #c5a47e;
-    color: #1a1a1a;
+    background: var(--primary-gold);
+    color: var(--dark-bg);
+    transform: translateY(-0.25rem);
 }
 
-/* Footer */
+/* Fluid Map Container */
+.restaurant-map {
+    width: 100%;
+    height: 50dvh;
+    min-height: 300px;
+    border: none;
+    border-radius: 1rem;
+    margin-block: 2rem;
+}
+
+/* Enhanced Footer */
 .contact-footer {
+    padding: 2rem 5vw;
     text-align: center;
-    padding: 2rem;
-    margin-top: 1rem;
-    color: #fca863;
+    background: var(--dark-bg);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: clamp(0.875rem, 1vw + 0.75rem, 1rem);
+    line-height: 1.8;
 }
 
-/* Responsive Design */
+/* Advanced Responsive Handling */
 @media (max-width: 768px) {
     .contact-container {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        padding: 1.5rem;
     }
-    
-    .restaurant-map {
-        height: 300px;
-    }
-    
+
     .social-icons {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    .restaurant-map {
+        height: 60dvh;
     }
 }
 
 @media (max-width: 480px) {
-    .contact-header h1 {
-        font-size: 2.5rem;
+    :root {
+        --container-width: 95%;
     }
-    
+
     .contact-card {
-        padding: 1.5rem;
+        padding: 1.25rem;
+    }
+
+    .social-icons a {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.25rem;
+    }
+}
+
+/* Accessibility Enhancements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
+
+:focus-visible {
+    outline: 2px solid var(--primary-gold);
+    outline-offset: 0.25rem;
+}
+
+/* Fluid Typography Helper */
+@media (min-width: 20em) and (max-width: 80em) {
+    :root {
+        font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
     }
 }

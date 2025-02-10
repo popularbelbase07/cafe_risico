@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="../app.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="../app.js"></script>
 </head>
 <body>
     <header>
         <div class="logo">
             <img src="../images\risiko.jpg" alt="Cafe Risiko Søborg Logo">
-            <h1>CAFE RISIKO SØBORG</h1>
+            <h1>CAFE RISICO GLADSAXE</h1>
         </div>
         <nav>
+                                <!-- Add this button inside your header (after logo) -->
+<button class="menu-toggle" aria-label="Toggle navigation">
+    <span class="hamburger"></span>
+</button>
             <ul class="menu">
                 <li><a href="../app.html">Home</a></li>
                 <li><a href="./menu.html">Menu</a></li>
@@ -26,8 +31,8 @@
 
     <!-- Menu Header -->
     <header class="menu-header">
-        <h1>Fine Dining Experience</h1>
-        <p class="subtitle">We are ready to serve you</p>
+        <h1>Fin Spiseoplevelse</h1>
+        <p class="subtitle">Vi er klar til at betjene dig...</p>
     </header>
 
     <!--Menu view and download -->
@@ -35,11 +40,11 @@
     <div class="container">
         <div class="button-container">
             <!-- Replace 'menu.pdf' with your actual PDF file name -->
-            <a href="menu.pdf" target="_blank" class="btn view-btn">
+            <a href="./Risico Søborg DK 2025.pdf" target="_blank" class="btn view-btn">
                 View Menu
             </a>
             
-            <a href="menu.pdf" download class="btn download-btn">
+            <a href="./Risico Søborg DK 2025.pdf" download class="btn download-btn">
                 Download Menu
             </a>
         </div>
@@ -49,14 +54,14 @@
     <!-- Appetizers -->
     <section class="menu-section" id="appetizers">
         <div class="container">
-            <h2 class="section-title">Appetizers</h2>
-            <p class="price"> PRICE : DKK ...</p>
+            <h2 class="section-title">Forretter</h2>
+           <!-- <p class="price"> PRICE : DKK ...</p>-->
             <div class="menu-grid">
                 <!-- Appetizer Items -->
                 <div class="menu-item">
                     <div class="item-text">
                         <h3>GAMBERETTI</h3>                      
-                        <p class="description">Small prawns in tomato-garlic sauce</p>
+                        <p class="description">Rejer i tomat-hvidløgssauce</p>
                     </div>
                     <img src="../images/GAMBARETTI.jpg" alt="GAMBERETTI">
                 </div>
@@ -69,8 +74,8 @@
     <!-- Main Courses -->
     <section class="menu-section" id="mains">
         <div class="container">
-            <h2 class="section-title">Main Courses</h2>
-            <p class="price"> PRICE : DKK ...</p>
+            <h2 class="section-title">Hovedretter</h2>
+          <!----  <p class="price"> PRICE : DKK ...</p>-->
             <div class="menu-grid">
                 <!-- Main Course Items -->
                 <div class="menu-item">
@@ -90,17 +95,17 @@
     <!-- Desserts -->
     <section class="menu-section" id="desserts">
         <div class="container">
-            <h2 class="section-title">Desserts</h2>
-            <p class="price">PRICE : DKK ...</p>
+            <h2 class="section-title">Desserter</h2>
+          <!--  <p class="price">PRICE : DKK ...</p>-->
             <div class="menu-grid">
                 <!-- Dessert Items -->
                 <div class="menu-item">
                     <div class="item-text">
                         <h3>TIRAMISU</h3>
                       
-                        <p class="description">Cream, suger ,egg white , coffee with venilla essience and Ameratto syrup and Lady finger. a</p>
+                        <p class="description">Fløde, sukker, æggehvide, kaffe med vaniljeessens og Amaretto-sirup samt ladyfinger.</p>
                     </div>
-                    <img src="../images/TIRAMISU.jpg" alt="Chocolate Soufflé">
+                    <img src="../images/TIRAMISU.jpg" alt="Tiramisu">
                 </div>
                 
                 <!-- More dessert items -->
@@ -111,11 +116,11 @@
     <!-- Beverages -->
     <section class="menu-section" id="beverages">
         <div class="container">
-            <h2 class="section-title">Crafted Beers</h2>
+            <h2 class="section-title">Håndværksøl.</h2>
             <div class="menu-grid">
                 <!-- Beer Section -->
                 <div class="beverage-item">
-                    <h3>Artisanal Beers</h3>
+                    <h3>Håndværksø</h3>
                     <ul class="beer-list">
                         <li>
                             <span class="beer-name">Tuborg classic</span>
@@ -142,14 +147,14 @@
 
                 <!-- Cocktails -->
                 <div class="container">
-                    <h2 class="section-title">Signature Cocktails</h2>
+                    <h2 class="section-title">Signaturcocktails.</h2>
                     <div class="menu-grid">
                 <div class="Cocktails_item">
-                    <h3>Signature Cocktails</h3>
-                    <p class="price1">PRICE : DKK ...</p> 
+                    <h3>Signaturcocktails.</h3>
+                   <!-- <p class="price1">PRICE : DKK ...</p> -->
                     <div class="cocktail">
-                        <h4>Smoked Old Fashioned</h4>
-                        <p class="description">Woodford Reserve, demerara syrup, orange bitters, smoked with hickory</p>
+                        <h4>Røget Old Fashioned.</h4>
+                        <p class="description">Woodford Reserve, demerarasirup, orange bitters, røget med hickory.</p>
                     </div>
                     <div class="menu-grid">
                     <div class="menu-item">
@@ -166,14 +171,14 @@
             </div>
                       <!-- Wine -->
                       <div class="container">
-                        <h2 class="section-title">Wines</h2>
+                        <h2 class="section-title">Vine</h2>
                         <div class="menu-grid">
                     <div class="wine_item">
-                        <h3>Wine</h3>
-                        <p class="price1">PRICE : DKK ...</p> 
+                        <h3>Vin</h3>
+                       <!-- <p class="price1">PRICE : DKK ...</p> -->
                         <div class="cocktail">
-                            <h4>Smoked Old Fashioned</h4>
-                            <p class="description">Woodford Reserve, demerara syrup, orange bitters, smoked with hickory</p>
+                            <h4></h4>
+                            <p class="description"></p>
                         </div>
                         <div class="menu-grid">
                         <div class="menu-item">
@@ -185,20 +190,20 @@
     </section>
     <section class="menu-section" id="liquor">
         <div class="container">
-            <h2 class="section-title">Liquor</h2>
+            <h2 class="section-title">likør</h2>
             <div class="menu-grid">
                 <!-- Liquor Items -->
                 <div class="menu-item">
                     <div class="item-text">
                         <h3>Whiskey</h3>
-                        <p class="description">A selection of fine whiskeys from around the world</p>
+                        <p class="description">En udvalg af fine whiskyer fra hele verden.</p>
                     </div>
                     <img src="../images/whiskey.jpg" alt="Whiskey">
                 </div>
                 <div class="menu-item">
                     <div class="item-text">
                         <h3>Vodka</h3>
-                        <p class="description">Premium vodkas for a smooth experience</p>
+                        <p class="description">Premium vodkaer for en glat oplevelse.</p>
                     </div>
                     <img src="../images/vodka.jpg" alt="Vodka">
                 </div>
@@ -210,20 +215,20 @@
     <!-- Other -->
     <section class="menu-section" id="other">
         <div class="container">
-            <h2 class="section-title">Other</h2>
+            <h2 class="section-title">Anden</h2>
             <div class="menu-grid">
                 <!-- Other Items -->
                 <div class="menu-item">
                     <div class="item-text">
-                        <h3>Soft Drinks</h3>
-                        <p class="description">A variety of refreshing soft drinks</p>
+                        <h3>Læskedrikke</h3>
+                        <p class="description">Et udvalg af forfriskende læskedrikke.</p>
                     </div>
                     <img src="../images/soft-drinks.jpg" alt="Soft Drinks">
                 </div>
                 <div class="menu-item">
                     <div class="item-text">
-                        <h3>Mocktails</h3>
-                        <p class="description">Delicious non-alcoholic cocktails</p>
+                        <h3>Mocktails / Alkoholfri cocktails.</h3>
+                        <p class="description">Dejlige alkoholfrie cocktails og blanding af frisk juice.</p>
                     </div>
                     <img src="../images/mocktails.jpg" alt="Mocktails">
                 </div>
@@ -234,7 +239,7 @@
 
     <!-- Footer -->
     <footer class="menu-footer">
-        <p>&copy; 2024 CAFE RISIKO SØBORG. All rights reserved.</p>
+        <p>&copy; 2024 CAFE RISICO GLADSAXE. All rights reserved.</p>
     </footer>
 
     <!-- HTML -->
