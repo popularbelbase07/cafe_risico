@@ -7,13 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: SFTP Deploy
+      - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp
-          port: 22
+          protocol: ftps      # Try "ftp" or "ftps-legacy" if this fails
+          port: 21             # Use 990 for "ftps-legacy"
           local-dir: ./
           server-dir: ${{ secrets.FTP_REMOTE_DIR }}
