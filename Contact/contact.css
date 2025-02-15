@@ -102,15 +102,15 @@ body {
     background: var(--dark-bg);
     position: relative;
     overflow: hidden;
-   
 }
-.social-media h2{
+
+.social-media h2 {
     margin: 20px;
 }
 
 .social-icons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto, minmax(150px, 1fr));
     gap: 1rem;
     width: var(--container-width);
     margin-inline: auto;
@@ -120,15 +120,15 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.75rem;
-    padding: 1em 1.5em;
+    gap: 0.5rem;
+    padding: 0.5em 0.75em; /* Reduced padding for smaller size */
     border: 2px solid var(--primary-gold);
     border-radius: 100vw;
     color: #fff;
     text-decoration: none;
     transition: var(--transition);
     background: transparent;
-    font-size: clamp(0.9375rem, 1vw + 0.75rem, 1.125rem);
+    font-size: clamp(0.75rem, 0.75vw + 0.5rem, 1rem);
 }
 
 .social-icons a:hover {
