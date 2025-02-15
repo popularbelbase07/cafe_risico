@@ -44,7 +44,6 @@ header {
 }
 
 /* Navigation Styles */
-/* Updated Navigation Styles */
 nav ul.menu {
     list-style: none;
     margin: 0;
@@ -217,16 +216,14 @@ nav ul.menu li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-/* Special Section for Menu*/
-
-
+/* Special Section for Menu */
 .special {
     margin: 0;
     font-family: 'Cochin, Georgia, Times, Times New Roman, serif';
     background-color: #f9f9f9;
     margin: 100px;
 }
+
 .container_special {
     display: flex;
     flex-wrap: wrap;
@@ -234,9 +231,8 @@ nav ul.menu li a:hover {
     margin: 0 auto;
     padding: 10px;
     gap: 200px; /* Adds space between image and text containers */
-   
 }
-/* Image Looping Container (Left Side) */
+
 .image-container_special {
     flex: 2; /* Takes 2/3 of the container width */
     position: relative;
@@ -244,6 +240,7 @@ nav ul.menu li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
+
 .slideshow_special {
     position: relative;
     width: 100%;
@@ -261,7 +258,7 @@ nav ul.menu li a:hover {
     transition: opacity 1s ease-in-out;
     border-radius: 10px; /* Rounded corners for images */
 }
-/* Keyframes for Slideshow */
+
 @keyframes slideshow_special {
     0% { opacity: 0; }
     10% { opacity: 1; }
@@ -271,7 +268,7 @@ nav ul.menu li a:hover {
 }
 
 .slide_special:nth-child(1) {
-    animation: slideShow 9s infinite ;
+    animation: slideShow 9s infinite;
 }
 
 .slide_special:nth-child(2) {
@@ -282,7 +279,6 @@ nav ul.menu li a:hover {
     animation: slideShow 9s infinite 12s;
 }
 
-/* Text Container (Right Side) */
 .text-container_special {
     flex: 1; /* Takes 1/3 of the container width */
     padding: 10px;
@@ -290,6 +286,7 @@ nav ul.menu li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
+
 .text-container_special h2 {
     font-size: 2rem;
     margin-bottom: 15px;
@@ -301,38 +298,6 @@ nav ul.menu li a:hover {
     line-height: 1.6;
     color: #4f4d4d;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Food Section */
 .food-section {
@@ -368,10 +333,8 @@ nav ul.menu li a:hover {
     flex: 1 1 40ch;
     font-size: clamp(1.2rem, 1.5vw, 1rem);
     line-height: 1.6;
-    color:#4f4d4d;;
+    color: #4f4d4d;
 }
-
-
 
 /* Cocktail Section */
 .cocktail-section {
@@ -448,12 +411,7 @@ footer {
     margin-top: 2rem;
     font-size: clamp(2rem, 4vw, 2rem);
     color: #c5a47e;
-} 
-
-
-
-
-
+}
 
 /* Responsive Breakpoints */
 @media (max-width: 768px) {
@@ -471,24 +429,24 @@ footer {
         padding: 1.5rem;
     }
 
-    .container {
+    .container_special {
         flex-direction: column; /* Stacks image and text vertically */
     }
 
-    .image-container {
+    .image-container_special {
         flex: 1 1 100%; /* Takes full width on smaller screens */
         height: 300px; /* Adjust height for smaller screens */
     }
 
-    .text-container {
+    .text-container_special {
         flex: 1 1 100%; /* Takes full width on smaller screens */
     }
 
-    .text-container h2 {
+    .text-container_special h2 {
         font-size: 1.8rem; /* Slightly smaller heading */
     }
 
-    .text-container p {
+    .text-container_special p {
         font-size: 0.9rem; /* Slightly smaller text */
     }
 }
@@ -526,16 +484,18 @@ footer {
         font-size: 1.5rem; /* Increase the icon size */
     }
 
-    .image-container {
+    .image-container_special {
         height: 200px; /* Smaller height for very small screens */
+        width: 200px;
     }
 
-    .text-container h2 {
+    .text-container_special h2 {
         font-size: 1.5rem; /* Smaller heading */
     }
 
-    .text-container p {
-        font-size: 0.8rem; /* Smaller text */
+    .text-container_special p {
+        font-size: 1.2rem; /* Smaller text */
+        width: 220px;
     }
 }
 
@@ -545,5 +505,5 @@ footer {
     padding: .5rem 5%;
     font-size: clamp(0.75rem, 2vw, 0.875rem);
     text-align: center;
-height: 60px;
+    height: 60px;
 }
