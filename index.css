@@ -199,6 +199,83 @@ nav ul.menu li a:hover {
     5%, 30% { opacity: 1; }
 }
 
+
+
+/* Parking Section Styles */
+.parking-section {
+    margin: 40px auto;
+    padding: 30px 0;
+    background: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    max-width: 900px;
+    width: 95%;
+}
+
+.parking-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.parking-photo img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+    background: #eaeaea;
+}
+
+.parking-info {
+    flex: 1;
+    min-width: 220px;
+    text-align: left;
+}
+
+.parking-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.parking-info h3 {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .parking-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+    .parking-photo img {
+        max-width: 100%;
+        height: auto;
+    }
+    .parking-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .parking-section {
+        padding: 15px 0;
+        border-radius: 8px;
+    }
+    .parking-info h2 {
+        font-size: 1.3em;
+    }
+    .parking-info h3 {
+        font-size: 1em;
+    }
+}
 /* Welcome Section */
 .welcome-section {
     padding: var(--padding-section) var(--padding-base);
